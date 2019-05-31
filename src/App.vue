@@ -1,7 +1,10 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div>
+       <el-button @click="openDiag = true" type="primary">Welcome</el-button>
+       <el-dialog :visible.sync="openDiag"><HelloWorld msg="Welcome to Your Vue.js App"/></el-dialog>
+    </div>
+    
   </div>
 </template>
 
@@ -12,11 +15,16 @@ export default {
   name: 'app',
   components: {
     HelloWorld
+  },
+  data: function () {
+    return {
+      openDiag: false
+    }
   }
 }
 </script>
 
-<style lang="scss">
+<style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
