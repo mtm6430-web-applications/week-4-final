@@ -4,7 +4,7 @@
        <el-button @click="openDiag = true" type="primary">Welcome</el-button>
        <el-dialog :visible.sync="openDiag"><HelloWorld msg="Welcome to Your Vue.js App"/></el-dialog>
     </div>
-    
+
   </div>
 </template>
 
