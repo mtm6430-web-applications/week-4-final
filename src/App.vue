@@ -1,15 +1,16 @@
 <template>
   <div id="app">
     <div>
-       <el-button @click="openDiag = true" type="primary">Welcome</el-button>
-       <el-dialog :visible.sync="openDiag"><HelloWorld msg="Welcome to Your Vue.js App"/></el-dialog>
+      <el-button @click="openDiag = true" type="primary">Welcome</el-button>
+      <el-dialog :visible.sync="openDiag">
+        <HelloWorld msg="Welcome to Your Vue.js App"/>
+      </el-dialog>
     </div>
-
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld.vue';
 
 export default {
   name: 'app',
@@ -26,7 +27,7 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
