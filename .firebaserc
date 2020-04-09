@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "default": "sharmaa-vue-and-axios"
+  },
+  "targets": {
+    "sharmaa-vue-and-axios": {
+      "hosting": {
+        "week4": [
+          "..",
+          "mtm6430-week4",
+          "mtm6430-week4cd"
+        ]
+      }
+    }
+  }
+}
